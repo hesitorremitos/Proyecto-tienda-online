@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 15px;
+}
+
+header img {
+    max-height: 100px;
+    width: auto;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.neumorphic-card {
+    background: #222;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 15px #111, -6px -6px 15px #333;
+    width: 350px;
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: inset 3px 3px 6px #222, inset -3px -3px 6px #444;
+    cursor: pointer;
+}
+
+select {
+    appearance: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.image-preview {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.image-preview img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 3px 3px 6px #222, -3px -3px 6px #444;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.neumorphic-button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 5px 5px 10px #222, -5px -5px 10px #555;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-button {
+    background: #fff;
+    color: #000;
+}
+
+.primary-button:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    transform: scale(1.07);
+}
+
+.secondary-button {
+    background: #444;
+    color: #fff;
+}
+
+.secondary-button:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 12px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
